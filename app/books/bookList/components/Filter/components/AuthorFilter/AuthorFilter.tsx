@@ -71,9 +71,9 @@ const AuthorFilter = () => {
     config: { tension: 450, friction: 45 },
   });
 
-  const iconAnimation = useSpring({
-    transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-  });
+  // const iconAnimation = useSpring({
+  //   transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
+  // });
 
   return (
     <FilterTemplateContainer>
@@ -87,11 +87,11 @@ const AuthorFilter = () => {
               ` (${get(data, "data.data.data", [])?.length})`}
           </div>
         </div>
-        <animated.div
+        {/* <animated.div
           style={iconAnimation}
           // className="ml-2"
           children={<RiArrowDropDownLine size={24} />}
-        />
+        /> */}
         {/* <RiArrowDropDownLine size={24} /> */}
       </div>
       {/* @ts-ignore */}
