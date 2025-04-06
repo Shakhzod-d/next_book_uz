@@ -10,7 +10,7 @@ const AuthorList = dynamic(() => import("./list/container"), { ssr: false });
 const AuthorsPage = () => {
   return (
     <Suspense fallback={<Loader />}>
-      <AuthorList />;
+      <AuthorList />
     </Suspense>
   );
 };
