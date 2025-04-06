@@ -88,7 +88,7 @@ const PublisherFilter = () => {
               ` (${get(data, "data.data.data", [])?.length})`}
           </div>
         </div>
-
+        {/* @ts-ignore */}
         <animated.div style={iconAnimation} className="ml-2">
           <RiArrowDropDownLine size={24} />
         </animated.div>
