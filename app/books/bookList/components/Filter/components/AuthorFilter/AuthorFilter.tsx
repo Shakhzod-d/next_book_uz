@@ -87,9 +87,12 @@ const AuthorFilter = () => {
               ` (${get(data, "data.data.data", [])?.length})`}
           </div>
         </div>
-        <animated.div style={iconAnimation} className="ml-2">
-          <RiArrowDropDownLine size={24} />
-        </animated.div>
+        <animated.div
+          style={iconAnimation}
+          className="ml-2"
+          children={<RiArrowDropDownLine size={24} />}
+        />
+        {/* <RiArrowDropDownLine size={24} /> */}
       </div>
       {/* @ts-ignore */}
       <animated.div style={animation}>
