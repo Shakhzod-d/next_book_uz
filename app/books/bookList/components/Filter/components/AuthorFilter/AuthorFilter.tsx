@@ -89,7 +89,7 @@ const AuthorFilter = () => {
         </div>
         <animated.div
           style={iconAnimation}
-          className="ml-2"
+          // className="ml-2"
           children={<RiArrowDropDownLine size={24} />}
         />
         {/* <RiArrowDropDownLine size={24} /> */}
