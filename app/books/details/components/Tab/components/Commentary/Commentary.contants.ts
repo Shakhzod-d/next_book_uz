@@ -1,0 +1,1 @@
+export const BOOK_COMMENT_LIST_LIMIT = 10;

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+  font-family: "Inter";
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: #1f365b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ff8b22;
+  transition: all 0.1s;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  text-transform: initial !important;
+}

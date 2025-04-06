@@ -1,0 +1,63 @@
+/* literata-regular - latin_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Inter-Light"),
+    url("../assets/fonts/Inter-Light.ttf") format("ttf"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/Inter-Light.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* literata-500 - latin_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Inter-Medium"),
+    url("../assets/fonts/Inter-Medium.ttf") format("ttf"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/Inter-Medium.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* literata-600 - latin_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Inter-SemiBold"),
+    url("../assets/fonts/Inter-SemiBold.ttf") format("ttf"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/Inter-SemiBold.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* literata-700 - latin_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Inter-Bold"),
+    url("../assets/fonts/Inter-Bold.ttf") format("ttf"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/Inter-Bold.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* literata-800 - latin_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local("Inter-ExtraBold"),
+    url("../assets/fonts/Inter-ExtraBold.ttf") format("ttf"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/Inter-ExtraBold.ttf") format("ttf");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  font-family: "Inter", sans-serif;
+}
