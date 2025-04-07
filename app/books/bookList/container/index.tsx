@@ -1,14 +1,30 @@
+// "use client";
+
+// import React from "react";
+// import BookList from "./BookList";
+
+// const index = () => {
+//   return (
+//     // <BookListProvider>
+//     <BookList />
+//     // </BookListProvider>
+//   );
+// };
+
+// export default index;
+
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import BookList from "./BookList";
+import { Loader } from "@/components";
 
-const index = () => {
+const Index = () => {
   return (
-    // <BookListProvider>
-    <BookList />
-    // </BookListProvider>
+    <Suspense fallback={<Loader />}>
+      <BookList />
+    </Suspense>
   );
 };
 
-export default index;
+export default Index;

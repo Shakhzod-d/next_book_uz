@@ -1,8 +1,6 @@
 "use client";
 
 import React, { Suspense } from "react";
-// import BookDetails from "./bookDetails/container";
-// import BookList from "./bookList/container";
 import { Loader } from "@/components";
 import dynamic from "next/dynamic";
 
