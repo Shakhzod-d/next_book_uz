@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC } from "react";
 import { MenuItem, TextField } from "@mui/material";
 import { AutoComplateStyled } from "./Select.style";

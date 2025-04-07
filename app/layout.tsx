@@ -1,7 +1,7 @@
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
-import { useContext, useEffect, useMemo } from "react";
+import { Suspense, useContext, useEffect, useMemo } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import { LayoutContext } from "@/layout/context";
 import { DarkTheme } from "@/styles/theme/DarkTheme";
@@ -111,14 +111,18 @@ export default function RootLayout({
                                 <ThemeProvider theme={theme}>
                                   <QueryProvider>
                                     <CssBaseline />
-                                    <Auth />
-                                    <Navbar />
-                                    {children}
-                                    <Footer />
-                                    <Toaster
-                                      containerStyle={{ zIndex: "100000" }}
-                                    />
-                                    <ScrollToTop />
+                                    <Suspense
+                                      fallback={<div>Loading sidebar...</div>}
+                                    >
+                                      <Auth />
+                                      <Navbar />
+                                      {children}
+                                      <Footer />
+                                      <Toaster
+                                        containerStyle={{ zIndex: "100000" }}
+                                      />
+                                      <ScrollToTop />
+                                    </Suspense>
                                   </QueryProvider>
                                 </ThemeProvider>
                               </SuccessfulProvider>

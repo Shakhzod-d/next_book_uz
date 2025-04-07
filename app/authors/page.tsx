@@ -1,11 +1,37 @@
-"use client";
+// "use client";
+
+// import React, { Suspense } from "react";
+// import { Loader } from "@/components";
+// import AuthorClientWrapper from "./AuthorClientWrapper";
+
+// const AuthorsPage = () => {
+//   return (
+//     <Suspense fallback={<Loader />}>
+//       <AuthorClientWrapper />
+//     </Suspense>
+//   );
+// };
+
+// export default AuthorsPage;
+
+// app/authors/page.tsx
+"use client"; // Mark this file as a client-side component
 
 import React, { Suspense } from "react";
-// import AuthorList from "./list/container";
+import { useSearchParams } from "next/navigation";
 import { Loader } from "@/components";
-import dynamic from "next/dynamic";
 
-const AuthorList = dynamic(() => import("./list/container"), { ssr: false });
+// Your component that uses useSearchParams()
+const AuthorList = () => {
+  const searchParams = useSearchParams();
+
+  return (
+    <div>
+      <p>Search Params: {searchParams?.toString()}</p>
+      {/* Render your author list or related content here */}
+    </div>
+  );
+};
 
 const AuthorsPage = () => {
   return (
